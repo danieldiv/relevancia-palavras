@@ -13,7 +13,8 @@ all: libed myapps
 libed: \
 	$(OBJ)/dado.o \
 	$(OBJ)/util.o \
-	$(OBJ)/read.o
+	$(OBJ)/read.o \
+	$(OBJ)/control.o
 	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
 
 myapps: clean_apps \
